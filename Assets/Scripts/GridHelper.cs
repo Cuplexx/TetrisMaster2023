@@ -55,6 +55,9 @@ public class GridHelper : MonoBehaviour
             //Después de destruirlo, el espacio que había reservado en la rejilla virtual, lo vacío.
             //Cambiaríamos las X del dibujo de arriba por una posición vacía (null)
             grid[x, y] = null;
+
+            pointsco.pointsInstance.ScorePoints(100);
+            pointsco.pointsInstance.UpdatePoints();
         }
     }
 
